@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="shortcut icon" href="https://cdn.icon-icons.com/icons2/1903/PNG/512/iconfinder-weather-weather-forecast-hot-sun-day-3859136_121222.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <main class="container">
+        <h1 class="text-center" style="color: white;">Weather Forecast</h1>
+        <form id="inputForm">
+            <div class="search-bar">
+                <input type="text" placeholder="Enter location" id="search-box" required>
+                <button type="submit" id="search-btn">
+                    <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="2.5"
+                        stroke="currentColor" class="size-6" width="17">
+                        <path stroke-linecap="round" stroke-linejoin="round"
+                            d="m21 21-5.197-5.197m0 0A7.5 7.5 0 1 0 5.196 5.196a7.5 7.5 0 0 0 10.607 10.607Z" />
+                    </svg>
+                    <span>Search</span>
+                </button>
+            </div>
+        </form>
+
+        <div class="current-weather-card">
+            <h2 class="m-0 fw-600">Current Weather</h2>
+            <div>
+                <div>
+                    <h1 class="m-0 fw-600" id="current-temperature">23°C</h1>
+                    <p class="m-0 current-weather" id="current-condition">Sunny</p>
+                    <p class="m-0" id="current-place">Haryana, IN</p>
+                </div>
+                <div><img alt="condition-img" id="weather-condition-img"></div>
+            </div>
+        </div>
+
+        <div>
+            <h2 class="fw-600" style="color: white;">5-Day Forecast</h2>
+            <div class="forecast-cards" id="forecastContainer">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="script.js"></script>
+
+</html>
